@@ -6,15 +6,15 @@
 ## API install instructions
 1. Prerequisite: [node.js](https://nodejs.org/en/) must be installed on your machine before proceeding  
 
-2. Open a console and navigate to the THINGS/API/things-api directory then execute    
+2. Open a console and navigate to the THINGS/API/things-api directory then execute
 
-    ```bash
-    npm install
-    ```
+```bash
+npm install
+```
 3. Create a file in API/things-api/conf/db/db_info.js
 4. Add the following lines  
 
-    ```javascript
+```javascript
     exports.config = {  
       user: 'username', //env var: PGUSER
       database: 'databasename', //env var: PGDATABASE  
@@ -24,7 +24,7 @@
       max: 10,  // max number of clients in the pool
       idleTimeoutMillis: 30000,  // how long a client is allowed to remain idle before being closed
     };  
-    ```
+```
 5. Fill in the proper data to connect to your database.
 6. Create a self-signed SSL certificate:
        (Prerequisite: openssl installed via npm insall -g openssl)
@@ -70,25 +70,25 @@
 10. Create another new file in API/things-api/conf/email_auth.js.
 11. Add the following lines  
 
-    ```javascript
+```javascript
     exports.auth = {  
     user: "sender",
     pass: "pw"
     };  
-    ```
+```
     Where sender is the e-mail address used to send e-mails about requests and
     inventory updates, and pw is the password to the account.
-13. Open API/things-api/Front_End/templates/js/services/thingsAPI.js and edit line 26 as follows:
+12. Open API/things-api/Front_End/templates/js/services/thingsAPI.js and edit line 26 as follows:
     
-    ```javascript
+```javascript
     var _urlBase = 'https://<YOUR_DOMAIN_HERE>:<YOUR_PORT>/api/';
-    ```
+```
     
-12. Launch the server from the things-api directory with
+13. Launch the server from the things-api directory with
 
-    ```bash
+```bash
     npm start --port 3000
-    ```
+```
     you may specify the port with the --port flag
     
     
