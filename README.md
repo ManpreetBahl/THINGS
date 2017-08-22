@@ -1,7 +1,7 @@
-﻿# Cat Things
- Cat things is a lightweight inventory control system developed for the CAT.
- Cat things will keep track of inventory levels, track usage trends,
- create shopping lists, and send alerts on low inventory.
+﻿# Cat THINGS
+ CAT THINGS is a lightweight inventory control system developed for the CAT.
+ CAT THINGS will keep track of inventory levels, track usage trends,
+ Create shopping lists, and send alerts on low inventory.
 
 ## API install instructions
 1. Prerequisite: [node.js](https://nodejs.org/en/) must be installed on your machine before proceeding  
@@ -39,8 +39,8 @@
     openssl req -new -key server.key -out server.csr
 
     ```
-    fill out the fields when prompted.  leave the optional fields blank.
-    then execute the following:
+    Fill out the fields when prompted. Leave the optional fields blank.
+    Then execute the following:
     ```bash
     openssl x509 -req -sha256 -days 365 -in server.csr -signkey server.key -out server.crt
     rm server.csr
@@ -92,5 +92,5 @@
     you may specify the port with the --port flag
     
     
-_this section should be updated regularly_
+_This section should be updated regularly._
 
