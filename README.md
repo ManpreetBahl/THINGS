@@ -34,7 +34,7 @@ npm install
     rm server.pass.key
     openssl req -new -key server.key -out server.csr
 ```
-    Fill out the fields when prompted. Leave the optional fields blank. Then execute the following:  
+Fill out the fields when prompted. Leave the optional fields blank. Then execute the following:  
 ```bash
     openssl x509 -req -sha256 -days 365 -in server.csr -signkey server.key -out server.crt  
     rm server.csr
