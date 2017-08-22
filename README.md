@@ -1,16 +1,15 @@
 ﻿# CAT THINGS
  CAT THINGS is a lightweight inventory control system developed for the CAT.
- CAT THINGS will keep track of inventory levels, track usage trends,
- Create shopping lists, and send alerts on low inventory.
+ CAT THINGS will keep track of inventory levels, track usage trends, create shopping lists, and send alerts on low inventory.
 
 ## API Install Instructions
-1) Prerequisite: [node.js](https://nodejs.org/en/) must be installed on your machine before proceeding  
-2) Open a console and navigate to the THINGS/API/things-api directory then execute
+1) Prerequisite: [node.js](https://nodejs.org/en/) must be installed on your machine before proceeding.  
+2) Open a console and navigate to the THINGS/API/things-api directory then execute:
 ```bash
 npm install
 ```
-3) Create a file in API/things-api/conf/db/db_info.js
-4) Add the following lines  
+3) Create a file in API/things-api/conf/db/db_info.js.
+4) Add the following lines:  
 ```javascript
     exports.config = {  
         user: 'username', //env var: PGUSER
@@ -52,12 +51,13 @@ npm install
     dd if=/dev/urandom of=./conf/jwtSecret.key bs=256 count=1
 ```
 8) Create a new file in API/things-api/conf/mailopt.js.
-9) Add the following lines  
+9) Add the following lines:  
 ```javascript
     exports.mail = {  
     from: '"name" <email-address>', // sender address
     to: 'destination' // list of receivers
-    };```
+    };
+```
     Where name is the name of the sender, email-address is their e-mail, and destination
     is the address to send the e-mail to.
 10) Create another new file in API/things-api/conf/email_auth.js.
@@ -70,16 +70,16 @@ npm install
 ```
     Where sender is the e-mail address used to send e-mails about requests and inventory updates, 
     and pw is the password to the account.
-12. Open API/things-api/Front_End/templates/js/services/thingsAPI.js and edit line 26 as follows:
+12) Open API/things-api/Front_End/templates/js/services/thingsAPI.js and edit line 26 as follows:
 ```javascript
     var _urlBase = 'https://<YOUR_DOMAIN_HERE>:<YOUR_PORT>/api/';
 ```
     
-13. Launch the server from the things-api directory with
+13) Launch the server from the things-api directory with:
 ```bash
     npm start --port 3000
 ```
-    You may specify the port with the --port flag
+    You may specify the port with the --port flag.
    
 _This section should be updated regularly._
 
