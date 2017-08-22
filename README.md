@@ -58,8 +58,8 @@ npm install
     to: 'destination' // list of receivers
     };
 ```
-    Where name is the name of the sender, email-address is their e-mail, and destination
-    is the address to send the e-mail to.  
+Where name is the name of the sender, email-address is their e-mail, and destination is the address to send the e-mail to.
+
 10) Create another new file in API/things-api/conf/email_auth.js.
 11) Add the following lines:
 ```javascript
@@ -68,8 +68,7 @@ npm install
     pass: "pw"
     };
 ```
-    Where sender is the e-mail address used to send e-mails about requests and inventory updates, 
-    and pw is the password to the account.  
+Where sender is the e-mail address used to send e-mails about requests and inventory updates, and pw is the password to the account.  
 12) Open API/things-api/Front_End/templates/js/services/thingsAPI.js and edit line 26 as follows:
 ```javascript
     var _urlBase = 'https://<YOUR_DOMAIN_HERE>:<YOUR_PORT>/api/';
@@ -79,7 +78,7 @@ npm install
 ```bash
     npm start --port 3000
 ```
-    You may specify the port with the --port flag.
+You may specify the port with the --port flag.
    
 _This section should be updated regularly._
 
